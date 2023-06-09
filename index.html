@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Africa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+      <div class="container">
+        <div class="header">
+            <img src="./Assets/img1.png" alt="Africa" class="logo" style="width: 150px; height: auto;">
+          </a>
+          <div class="toggle-container">
+            <form>
+              <input type="text" placeholder="Search anything" class="search-input">
+              <ion-icon name="search" class="search-icon"></ion-icon>
+            </form>
+            <input type="checkbox" class="dark-mode" id="toggle" />
+            <label for="toggle" class="toggle-label"></label>
+          </div>
+        
+        </div>
+        <div class="gallery">
+          
+        </div>
+        <a class="load-more" data-img="curated">Load More</a>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="config.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="main.js"></script>
+
+    <script>
+      function darkMode() {
+        const body = document.querySelector('body');
+        const container = document.querySelector('.container');
+         body.classList.toggle('dark-mode');
+        container.classList.toggle('dark-mode');
+      }
+       const toggleButton = document.querySelector('#toggle');
+      toggleButton.addEventListener('click', darkMode);
+    </script>
+
+   
+  
+</body>
+</html>
